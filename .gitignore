@@ -1,0 +1,11 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+media/
+.env
+db.sqlite3
+settings.json
+
+# PyCharm
+.idea
