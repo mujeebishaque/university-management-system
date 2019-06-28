@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'teachers.apps.TeachersConfig',
     'django.contrib.humanize',
     'library',
+    'headlines',
 ]
 
 MIDDLEWARE = [
