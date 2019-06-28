@@ -21,6 +21,7 @@ from django.contrib import admin
 from django.shortcuts import render
 from easyschool.views import index
 from teachers.views import SignUp
+from django.urls import path
 
 admin.site.site_header = "L G U Management System"
 admin.site.site_title = "L G U"
@@ -35,6 +36,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/students/', include('students.api.urls')),
     url(r'^signup/', SignUp.as_view(), name='signup'),
+    
 ]
 if settings.DEBUG:
     import debug_toolbar  # Add debugging urls

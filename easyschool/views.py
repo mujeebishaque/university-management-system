@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from headlines.models import Headline
 
 
 def index(request):
-
-    return render(request, 'index.html', {})
+    Content = Headline.objects.all()
+    return render(request, 'index.html', {'content': Content})
