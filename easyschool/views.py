@@ -4,4 +4,4 @@ from headlines.models import Headline
 
 def index(request):
     Content = Headline.objects.all()
-    return render(request, 'index.html', {'content': Content})
+    return render(request, 'index.html', {'Content': Content})
