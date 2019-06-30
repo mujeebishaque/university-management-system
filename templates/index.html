@@ -1,4 +1,5 @@
 {% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,6 +34,7 @@
   <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
 </head>
+
 
 <body data-spy="scroll" data-target="#navbar-example">
 
@@ -74,8 +76,8 @@
                   <li>
                     <a class="page-scroll" href="#services">Courses</a>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="#team">Faculty</a>
+                  <li class="active">
+                    <a class="page-scroll" href="{% url 'info' %}">Information Center</a>
                   </li>
 
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Management<span class="caret"></span></a>
@@ -101,6 +103,7 @@
   </header>
   <!-- header end -->
 
+{% block slider %}
   <!-- Start Slider Area -->
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
@@ -186,8 +189,11 @@
       </div>
     </div>
   </div>
+  {% endblock %}
   <!-- End Slider Area -->
-	<div class="headlines" style="background-color: #F9F9F9;">
+  {% block headlines %}
+  <!-- Headlines -->
+  <div class="headlines" style="background-color: #F9F9F9;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -196,9 +202,10 @@
 				</div>	
 			</div>
 		</div>
-	</div>
-	<!-- Info Boxes -->
-
+  </div>
+  {% endblock %}
+  <!-- Info Boxes -->
+  {% block about %}
   <!-- Start About area -->
   <div id="about" class="about-area area-padding">
     <div class="container">
@@ -254,8 +261,9 @@
       </div>
     </div>
   </div>
+  {% endblock %}
   <!-- End About area -->
-
+  {% block services %}
   <!-- Start Service area -->
   <div id="services" class="services-area area-padding">
     <div class="container">
@@ -327,7 +335,7 @@
     </div>
   </div>
   <!-- End Service area -->
-
+  {% endblock %}
   <!-- our-skill-area start -->
   <div class="our-skill-area fix hidden-sm">
     <div class="test-overly"></div>

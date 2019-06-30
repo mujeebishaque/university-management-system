@@ -19,7 +19,7 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.shortcuts import render
-from easyschool.views import index
+from easyschool.views import index, blog
 from teachers.views import SignUp
 from django.urls import path
 
@@ -36,6 +36,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/students/', include('students.api.urls')),
     url(r'^signup/', SignUp.as_view(), name='signup'),
+    path('info/', blog, name='info'),
     
 ]
 if settings.DEBUG:
