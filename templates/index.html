@@ -67,7 +67,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
+                  <li>
                     <a class="page-scroll" href="#home">Home</a>
                   </li>
                   <li>
@@ -80,12 +80,12 @@
                     <a class="page-scroll" href="{% url 'info' %}">Information Center</a>
                   </li>
 
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Management<span class="caret"></span></a>
+                  <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Management<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href=# >Administrators</a></li>
                       <li><a href=# >Gits Members</a></li>
                     </ul> 
-                  </li>
+                  </li> -->
                   <li>
 
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -191,6 +191,11 @@
   </div>
   {% endblock %}
   <!-- End Slider Area -->
+
+  {% block timetable %}
+  <br /> <br />
+  {% endblock %}
+
   {% block headlines %}
   <!-- Headlines -->
   <div class="headlines" style="background-color: #F9F9F9;">
@@ -815,10 +820,10 @@
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><span>e</span>Business</h2>
+                  <h2>Rapid Identity</h2>
                 </div>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <p>A Lahore Garrison University platform where the management can share latest news and offers/information with the faculty and the students studying in the university..</p>
                 <div class="footer-icons">
                   <ul>
                     <li>
@@ -844,7 +849,7 @@
               <div class="footer-head">
                 <h4>information</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                  You can contact us using the information below. Our Working hours are also mentioned.
                 </p>
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +123 456 789</p>
