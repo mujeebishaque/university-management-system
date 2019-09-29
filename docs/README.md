@@ -8,3 +8,5 @@
   5 - python manage.py createsuperuser
   6 - python manage.py runserver
 ```
+
+![sample/demo image](https://github.com/mujeebishaque/university-management-system/blob/master/Screenshot%20(279).png)
