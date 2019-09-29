@@ -10,3 +10,4 @@
 ```
 
 ![sample/demo image](https://github.com/mujeebishaque/university-management-system/blob/master/Screenshot%20(279).png)
+![sample/demo image 2](https://github.com/mujeebishaque/university-management-system/blob/master/address.png)
