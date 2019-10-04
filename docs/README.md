@@ -1,5 +1,5 @@
 # University Management System Django 2.1
-
+### How To Run The Code?
 ```
   1 - Dowload the project.
   2 - cd into the project, where there is manage.py file.
